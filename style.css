@@ -1,0 +1,389 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Bebas Nueue;
+}
+
+body {
+    overflow-x: hidden;
+}
+.header-container {
+    background-color: black;
+    width: 100%;
+    height: 70; 
+    top: 0;
+}
+
+.header-contents {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 60px;
+    font-size: 30;
+}
+.logo {
+    color: white;
+}
+
+.nav-button {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-image: url('art/about-us-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    width: 250px;
+    transition: .2s;
+    cursor: pointer;
+    margin: -30px;
+    z-index: 0;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.hey {
+    display: block;
+}
+.profiles {
+    position: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    margin-top: -60px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.about-us {
+    margin-top: 30px;
+    position: relative;
+    align-items: center;
+}
+
+@font-face {
+    font-family: Bebas Nueue;
+    src: url(fonts/Bebas/BebasNeue\ Regular.otf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+.about-us-logo {
+    position: absolute;
+    width: 20%;
+    margin: auto 40%;
+    top: 120px;
+    z-index: 2;
+}
+
+.vs {
+    margin: 70px;
+}
+
+.desc-container {
+    margin-top: 30px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.desc-text-area {
+    padding: 20px;
+}
+
+p {
+    font-family: Lato;
+    font-size: 20px;
+}
+.desc-text-area p {
+    width: 50%;
+    margin: auto;
+}
+.seperator {
+    margin: 10px auto;
+    border: 1px solid white;
+    width: 300px;
+}
+
+.footer-container {
+    border-top: white dotted;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    position: inherit;
+    overflow: hidden;
+}
+
+.footer-content {
+    margin: 60 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Lato;
+    align-items: end;
+    width: 85%;
+    line-height: 40px;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+.fadeIn {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0px;
+    animation: fade-in 1s ease-in;
+    z-index: 4;
+  }
+
+.fadeOut {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0px;
+    animation: fade-out 1s ease-out;
+    opacity: 1;
+    width: 0;
+    z-index: 4;
+}
+.lock {
+    overflow-y: auto;
+    animation: lockScroll 1s ease-out;
+}
+
+    @keyframes lockScroll {
+        0% {overflow-y: hidden;}
+        100% {overflow-y: auto;}
+    }
+
+  @keyframes fade-in {
+      0% {transform: translateX(-100%); opacity: 1; width: 100%;}
+     100% {transform: translateX(0); opacity: 1; width: 100%;}
+  }
+
+  @keyframes fade-out {
+    0% {transform: translateX(0); opacity: 1; width: 100%;}
+   100% {transform: translateX(100%); opacity: 1; width: 100%;}
+}
+
+
+
+.left-arrow {
+    animation: bounce-left 0.5s infinite ease-in-out;
+    position: absolute;
+}
+
+.right-arrow {
+    animation: bounce-right 0.5s infinite ease-in-out;
+    position: absolute;
+}
+
+@keyframes bounce-left {
+    from {
+        margin-left: -35;
+    }
+
+    to {
+        margin-left: -50;
+    }
+}
+
+@keyframes bounce-right {
+    from {
+        margin-left: -5;
+    }
+
+    to {
+        margin-left: 10;
+    }
+}
+
+.khalel {
+    height: 210%;
+    margin-bottom: 30;
+}
+
+.khalel-content {
+    position: relative;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+h {
+    font-family: Bebas Nueue;
+}
+
+.khalel-text-area {
+    position: inherit;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    /*margin: 140px 580px;*/
+    left: 600;
+    top: 100;
+    width: 530px;
+}
+
+.khalel-text-area p {
+    font-size: 30;
+}
+
+.khalel-text-area h {
+    font-size: 40px;
+}
+section {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+#full-body {
+    width: 470;
+    position: absolute;
+    top: 480;
+    left: -80px;
+    scale: 0.6;
+    animation: shrink linear;
+    animation-timeline: scroll();
+}
+
+@keyframes shrink {
+    0% {scale: 1; top: 5; left: 20px;}
+    45% {scale: 0.6; top: 480; left: -80px;}
+}
+
+video {
+    width: 600; height: 300;
+    margin: 4px 18px;
+    background-color: black;
+}
+
+.khalel-commercial {
+    align-content: center;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-align: left;
+}
+
+.infographic {
+    display: flex;
+    position: absolute;
+    width: 600;
+}
+.khalel-commercial p {
+    text-align: center;
+    font-size: 18;
+}
+
+.khalel-commercial h {
+    margin-left: 18px;
+}
+
+.label {
+    right: 90;
+    width: 130;
+    bottom: -520;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+#info-photo {
+    object-fit: cover;
+    position: absolute;
+    width: 200px;
+}
+
+.infographic p {
+    top: 30;
+    right: 40;
+    width: 300px;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    line-height: 38px;
+}
+
+
+.portfolio-content {
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.swiper {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-size: 60;
+    cursor: pointer;
+    position: absolute;
+    right: 25;
+    bottom: -300;
+    transition: 0.6s;
+}
+
+.swiper:hover {
+    right: 18;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#info-caption {
+    z-index: 5;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+    top: 504;
+    font-family: Lato;
+    font-size: 12px;
+}

@@ -1,0 +1,284 @@
+<html>
+<head>
+    <title>Slice of SD'23</title>
+    <link rel="stylesheet" href="style.css">
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="main.js"></script>
+    <link rel="icon" href="art/Icon.PNG">
+</head>
+
+<div class="header-container">
+    <div class="header-contents">
+        
+        <div style="display: flex;"><img src="art/Icon.PNG" style="width: 30px; margin-right: 10px;"><h class="logo">SLICE</h></div>
+        <nav class="nav-buttons">
+            <h class="nav-button" onclick="transition(AboutUsButton, 'about-us')" id="AboutUsButton" >Home</h>
+        </nav>
+    </div>
+</div>
+
+<body>
+    <div id="overlay"></div>
+    <section id="about-us" class="active">
+        <div class="about-us">
+            <img src="art/logo.PNG" class="about-us-logo">
+            <div class="profile-container">
+                <img src="art/about-us-bg.png" class="background-img">
+                <div class="profiles">
+                    <img src="art/diamond.png" style="z-index: -2; opacity: 0.2; width: 200; margin: auto; position: absolute;">
+                    <img src="art/diamond.png" style="z-index: -2; opacity: 0.2; width: 800; margin: auto; position: absolute;">
+                    <img src="art/cards/khalel-card.PNG" class="card" onclick="transition(KhalelButton, 'khalel')" id="KhalelButton" style="margin-top: 80;">
+                    <img src="art/cards/bea-card.PNG" class="card" onclick="transition(BeaButton, 'bea')" id="BeaButton">
+                    <div class="vs"></div>
+                    <img src="art/cards/lexi-card.PNG" class="card" onclick="transition(LexiButton, 'lexi')" id="LexiButton" style="margin-top: 80;">
+                    <img src="art/cards/tristan-card.PNG" class="card" onclick="transition(TristanButton, 'tristan')" id="TristanButton">
+                </div>
+            </div>
+
+            <div class="desc-container">
+                <div class="desc-text-area">
+                    <div style="display: flex; justify-content: center; position: relative;"> 
+                        <div style="position: relative;"><img src="art/arrow-left.png" style="width: 40px; margin: auto 0px;" class="left-arrow"></div>
+                        
+                        <h>CLICK ONE OF US TO LEARN MORE</h>
+                        <div style="position: relative;"><img src="art/arrow-right.png" style="width: 40px; margin: auto 0px;" class="right-arrow"></div>
+                        
+                    </div>
+
+
+                    <hr style="border: 0px; margin-bottom: 100px;">
+
+                    <h> ABOUT US </h>
+                    <hr class="seperator">
+                    <hr style="border: 0px; margin-bottom: 3px;">
+                    <p>We are a group of Software Development students from iACADEMY who want to show what we have made for GAMEX+ for the First Semester of Grade 12 Senior High School S.Y. 2024-2025.</p>
+                    <br>
+                    <p>We have worked on various collaboration projects as students, such as a Logical Fallacy Commercial and Self-care Infographics. We showcase our skills through these projects in which we contributed on with what we do best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--KHALEL SECTION-->
+    <section id="khalel">
+        <div class ="khalel">
+            <div class="fixed-background"><img src="art/profile-bg.png" class="background-img"></div>
+            <div class = "khalel-content">
+                <img src="art/khalel-fullbody.PNG" id="full-body">
+                <div class="khalel-text-area">
+                    <p>
+                        “My philosophy is being able to explore, learn and experience new and things through my friends and peers. 
+                        This world has many opportunities for me to test my limits and abilities,
+                         and most importantly is to appreciate the people who supported me”
+                    </p>
+
+                    <br><br><br><br><br><br>
+                    <div>
+                        <img src="art/diamond.png" style="opacity: 0.3; width: 200; margin: -70px 80px; position: absolute;">
+                        <h>I WORKED ON THE FOLLOWING</h>
+                    </div>
+                    
+                </div>
+
+                <div class="portfolio-content">
+                    <div class="khalel-commercial" id ="khalel-commercial">
+                        <h>Other collaborators: Bea, Lexi, & Tristan</h>
+                        <video controls><source src="content/Philosophy Commercial Group4 Ampil Canonizado Perez Salazar Singson Talingting.mp4" type="video/mp4"></video>
+                        <p>
+                            "I contributed by volunteering myself as the main actor in this commercial.
+                            <br><br>
+                            Every prop, outfit, and camera work was done by me using my environment. 
+                            One thing that was a challenge for me was the thought process of filming the commercial
+                            since I was filming in my room thinking what scenes would be appropriate."
+                        </p>
+                    </div>
+
+                    <div id="khalel-infographic" class="infographic" style="display: none;">
+                        <p>
+                            "For this project, I researched and wrote the Meditation information, 
+                            and helped in formatting the infographic. To be specific in the formatting aspect, 
+                            we only used a template from Canva. And so, we had to modify the design to fit the 
+                            information we wanted to put inside. I gave suggestions as to where other design elements should be."
+                        </p>
+                        <img src="content/group-infographic.png" id="info-photo">
+                        <h id="info-caption">Other collaborators: Bea & Tristan</h>
+                    </div>
+                    <img src="art/labels/commercial-khalel.png" class="label" id="khalel-label">
+                    <p class="swiper" onclick="slideTo('khalelSwiper', 'khalel')" id="khalelSwiper">&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--BEA SECTION-->
+     <section id="bea">
+        <div class ="khalel">
+            <div class="fixed-background"><img src="art/profile-bg.png" class="background-img"></div>
+            <div class = "khalel-content">
+                <img src="art/bea-fullbody.png" id="full-body">
+                <div class="khalel-text-area">
+                    <p>
+                        “My career goal is to present quality personalized works, wherein design and 
+                        user-experience is prioritized for the user's convenience. 
+                        I believe that working towards a project is for the self-fulfillment of helping others achieve their goal.”
+                    </p>
+
+                    <br><br><br><br><br><br>
+                    <div>
+                        <img src="art/diamond.png" style="opacity: 0.3; width: 200; margin: -70px 80px; position: absolute;">
+                        <h>I WORKED ON THE FOLLOWING</h>
+                    </div>
+                    
+                </div>
+
+                <div class="portfolio-content">
+                    <div class="khalel-commercial" id ="bea-commercial">
+                        <h>Other collaborators: Khalel, Lexi, & Tristan</h>
+                        <video controls><source src="content/Philosophy Commercial Group4 Ampil Canonizado Perez Salazar Singson Talingting.mp4" type="video/mp4"></video>
+                        <p>
+                            "In this collaboration project, 
+                            I wrote the script. <br><br>
+                            I focused on presenting 
+                            fallacies throughout the commercial, to name a few; divine fallacy, 
+                            appeal to composition, appeal to wealth, and appeal to emotion. I then proceeded to add comedic elements such as 
+                            "so expensive, you get a free pass to heaven!" to make the commercial memorable. <br><br>
+                            It is important for commercials to 
+                            stand out or to be eye-catching, as to successfully leave a product impression on the consumer."
+                        
+                        </p>
+                    </div>
+
+                    <div id="bea-infographic" class="infographic" style="display: none;">
+                        <p>
+                            "I researched and wrote the Meditation information, and helped in formatting the infographic. 
+                            To be specific in the formatting aspect, we only used a template from Canva. And so, we had to modify the
+                            design to fit the information we wanted to put inside. 
+                            I gave suggestions as to where other design elements should be."
+                        </p>
+                        <img src="content/group-infographic.png" id="info-photo">
+                        <h id="info-caption">Other collaborators: Khalel & Tristan</h>
+                    </div>
+                    <img src="art/labels/commercial-bea.png" class="label" id="bea-label">
+                    <p class="swiper" onclick="slideTo('beaSwiper', 'bea')" id="beaSwiper">&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--LEXI SECTION-->
+    <section id="lexi">
+        <div class ="khalel">
+            <div class="fixed-background"><img src="art/profile-bg.png" class="background-img"></div>
+            <div class = "khalel-content">
+                <img src="art/lexi-fullbody.png" id="full-body">
+                <div class="khalel-text-area">
+                    <p>
+                        “Seeking joy in work starts with challenging yourself. 
+                        Whatever I’m obligated to do, I strive to make the most out 
+                        of it. I find that everything is an opportunity I can gain 
+                        experience from and filler I can provide in my portfolio. 
+                        Failure is merely a stepping stone for success.”
+                    </p>
+
+                    <br><br><br><br><br><br>
+                    <div>
+                        <img src="art/diamond.png" style="opacity: 0.3; width: 200; margin: -70px 80px; position: absolute;">
+                        <h>I WORKED ON THE FOLLOWING</h>
+                    </div>
+                    
+                </div>
+
+                <div class="portfolio-content">
+                    <div class="khalel-commercial" id ="lexi-commercial">
+                        <h>Other collaborators: Khalel, Tristan, & Bea</h>
+                        <video controls><source src="content/Philosophy Commercial Group4 Ampil Canonizado Perez Salazar Singson Talingting.mp4" type="video/mp4"></video>
+                        <p>
+                            "Part of my contribution in this group assignment was researching the fallacies and
+                             writing demo lines that can be utilized in the script. 
+                            I played a big role in the conceptualization for the flow of the commercial. <br><br> We discussed how each fallacy
+                             could be demonstrated through the narratives that were delivered.
+                            Not only did our video had to be engaging, but we wanted it to meet it’s purpose which is to showcase the fallacies we were assigned to."
+                        
+                        </p>
+                    </div>
+
+                    <div id="lexi-infographic" class="infographic" style="display: none;">
+                        <p>
+                            “This here is an exploration on ways you can take care of your mind and body. 
+                            <br><br>
+                            Having been absent at the time 
+                            this assignment was announced, I worked on the infographic alone. 
+                            <br><br>
+                            I researched the ways a person can
+                             improve their mental health and physical being 
+                             and and arranged a design that can present these solutions.”
+                        </p>
+                        <img src="content/infographic.jpg" id="info-photo">
+                        <h id="info-caption">Other collaborators: Me, Myself & I</h>
+                    </div>
+                    <img src="art/labels/commercial-lexi.png" class="label" id="lexi-label">
+                    <p class="swiper" onclick="slideTo('lexiSwiper', 'lexi')" id="lexiSwiper">&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--TRISTAN SECTION-->
+    <section id="tristan">
+        <div class ="khalel">
+            <div class="fixed-background"><img src="art/profile-bg.png" class="background-img"></div>
+            <div class = "khalel-content">
+                <img src="art/tristan-fullbody.png" id="full-body">
+                <div class="khalel-text-area">
+                    <p>
+                        “My objective is to gain experience and provide a quality asset through logical actions. I would like to be part of this association and do my best to share my insights, leverage my co-workers, and uphold my ideals to meet the client's target. ”
+                    </p>
+
+                    <br><br><br><br><br><br>
+                    <div>
+                        <img src="art/diamond.png" style="opacity: 0.3; width: 200; margin: -70px 80px; position: absolute;">
+                        <h>I WORKED ON THE FOLLOWING</h>
+                    </div>
+                    
+                </div>
+
+                <div class="portfolio-content">
+                    <div class="khalel-commercial" id ="tristan-commercial">
+                        <h>Other collaborators: Khalel, Lexi, & Bea</h>
+                        <video controls><source src="content/Philosophy Commercial Group4 Ampil Canonizado Perez Salazar Singson Talingting.mp4" type="video/mp4"></video>
+                        <p>
+                            "I worked on the editing connecting videos, finding a good intro to the outro, and picking a nice background music since I enjoy editing and making videos."
+                        
+                        </p>
+                    </div>
+
+                    <div id="tristan-infographic" class="infographic" style="display: none;">
+                        <p>
+                            "I volunteered to pick the design on Canva and made the layout of the information provided by my groupmates, 
+                            Removed unnecessary clutter, and added subtle references of our work."
+                        </p>
+                        <img src="content/group-infographic.png" id="info-photo">
+                        <h id="info-caption">Other collaborators: Khalel & Bea</h>
+                    </div>
+                    <img src="art/labels/commercial-tristan.png" class="label" id="tristan-label">
+                    <p class="swiper" onclick="slideTo('tristanSwiper', 'tristan')" id="tristanSwiper">&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-container">
+        <div class="footer-content">
+            <div>
+                <img src="art/logo.PNG" class="footer-logo">
+                <p>+091-643-98XX</p>
+                <p>thisEmailExists@gmail.com</p>
+            </div>
+
+            <div style="text-align: right;">
+                <p>Home</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
